@@ -11,8 +11,7 @@ attr_accessor :word
 
 
   def match(array)
-    word_letters = @word.split("").sort
-    array.select {|x|x.split("").sort
+    array.select {|x|x.split("").sort == @word.split("").sort}
     word_letters == array_letters
     end
   end
